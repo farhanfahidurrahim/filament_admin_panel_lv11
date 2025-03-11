@@ -54,12 +54,6 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ])
-            ->navigationGroups([
-                NavigationGroup::make()
-                    ->label(fn (): string => __('navigation.settings'))
-                    ->icon('heroicon-o-cog-6-tooth')
-                    ->collapsed(),
-            ]);;
+            ]);
     }
 }
